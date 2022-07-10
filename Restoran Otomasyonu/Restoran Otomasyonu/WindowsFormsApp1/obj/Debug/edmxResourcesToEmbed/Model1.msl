@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PizzaModelStoreContainer" CdmEntityContainer="PizzaEntities">
+    <EntitySetMapping Name="Musteriler">
+      <EntityTypeMapping TypeName="PizzaModel.Musteriler">
+        <MappingFragment StoreEntitySet="Musteriler">
+          <ScalarProperty Name="musteriID" ColumnName="musteriID" />
+          <ScalarProperty Name="misim" ColumnName="misim" />
+          <ScalarProperty Name="msoyisim" ColumnName="msoyisim" />
+          <ScalarProperty Name="mTC" ColumnName="mTC" />
+          <ScalarProperty Name="mmail" ColumnName="mmail" />
+          <ScalarProperty Name="mTel" ColumnName="mTel" />
+          <ScalarProperty Name="mcinsiyet" ColumnName="mcinsiyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personeller">
+      <EntityTypeMapping TypeName="PizzaModel.Personeller">
+        <MappingFragment StoreEntitySet="Personeller">
+          <ScalarProperty Name="pcinsiyet" ColumnName="pcinsiyet" />
+          <ScalarProperty Name="padres" ColumnName="padres" />
+          <ScalarProperty Name="pgorev" ColumnName="pgorev" />
+          <ScalarProperty Name="personelID" ColumnName="personelID" />
+          <ScalarProperty Name="perisim" ColumnName="perisim" />
+          <ScalarProperty Name="persoyad" ColumnName="persoyad" />
+          <ScalarProperty Name="perTC" ColumnName="perTC" />
+          <ScalarProperty Name="perTel" ColumnName="perTel" />
+          <ScalarProperty Name="permail" ColumnName="permail" />
+          <ScalarProperty Name="pernick" ColumnName="pernick" />
+          <ScalarProperty Name="persifre" ColumnName="persifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="PizzaModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="PizzaModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="PizzaModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="PizzaModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PizzaModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="PizzaModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PizzaModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="PizzaModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="PizzaModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PizzaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Masalar">
+      <EntityTypeMapping TypeName="PizzaModel.Masalar">
+        <MappingFragment StoreEntitySet="Masalar">
+          <ScalarProperty Name="masano" ColumnName="masano" />
+          <ScalarProperty Name="mdurum" ColumnName="mdurum" />
+          <ScalarProperty Name="masaID" ColumnName="masaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparis">
+      <EntityTypeMapping TypeName="PizzaModel.Siparis">
+        <MappingFragment StoreEntitySet="Siparis">
+          <ScalarProperty Name="masano" ColumnName="masano" />
+          <ScalarProperty Name="masadurum" ColumnName="masadurum" />
+          <ScalarProperty Name="urunfiyati" ColumnName="urunfiyati" />
+          <ScalarProperty Name="masaID" ColumnName="masaID" />
+          <ScalarProperty Name="urunID" ColumnName="urunID" />
+          <ScalarProperty Name="siparisID" ColumnName="siparisID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urunler">
+      <EntityTypeMapping TypeName="PizzaModel.Urunler">
+        <MappingFragment StoreEntitySet="Urunler">
+          <ScalarProperty Name="urunfiyati" ColumnName="urunfiyati" />
+          <ScalarProperty Name="urunadi" ColumnName="urunadi" />
+          <ScalarProperty Name="urunturu" ColumnName="urunturu" />
+          <ScalarProperty Name="uID" ColumnName="uID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
